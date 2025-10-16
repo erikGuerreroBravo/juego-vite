@@ -60,7 +60,7 @@ const turnoComputadora = ( puntosMinimos ) => {
         imgCarta.src = `assets/cartas/${ carta }.png`; //3H, JD
         imgCarta.classList.add('carta');
         divCartasComputadora.append( imgCarta );
-
+        //condición de si el jugador se pasa de 21
         if( puntosMinimos > 21 ) {
             break;
         }
