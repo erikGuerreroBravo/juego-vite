@@ -3,6 +3,7 @@ import _ from 'underscore';
 // Esta función crea un nuevo deck
 export const crearDeck = (tiposDeCarta, tiposEspeciales) => {
 
+    //ciclo iteratrivo
     for( let i = 2; i <= 10; i++ ) {
         for( let tipo of tiposDeCarta ) {
             deck.push( i + tipo);
