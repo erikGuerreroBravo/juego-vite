@@ -4,13 +4,14 @@ import _ from 'underscore';
 
 /**
  * 
- * @param {array} tiposDeCarta 
- * @param {array} tiposEspeciales 
- * @returns  {array} retorna un nuevo deck de cartas
+ * @param {array<string>} tiposDeCarta  Ejemplo: ['C','D','H','S']
+ * @param {array<string>} tiposEspeciales Ejemplo:  ['A','J','Q','K'] 
+ * @returns  {array<string>} retorna un nuevo deck de cartas
  */
 export const crearDeck = (tiposDeCarta, tiposEspeciales) => {
    
-   if(!tiposDeCarta) throw new Error('Tipos de carta es obligatorio como un arreglo de string');
+   if(!tiposDeCarta || tiposDeCarta.lebgth ===0) 
+    throw new Error('Tipos de carta es obligatorio como un arreglo de string');
    
     let deck = [];
     //ciclo iteratrivo
