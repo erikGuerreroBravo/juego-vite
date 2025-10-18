@@ -13,6 +13,9 @@ export const crearDeck = (tiposDeCarta, tiposEspeciales) => {
    if(!tiposDeCarta || tiposDeCarta.lebgth ===0) 
     throw new Error('Tipos de carta es obligatorio como un arreglo de string');
    
+   if(!tiposEspeciales || tiposEspeciales.lebgth ===0 )
+    throw new Error('Tipos de especiales es obligatorio como un arreglo de string');
+
     let deck = [];
     //ciclo iteratrivo
     for( let i = 2; i <= 10; i++ ) {
