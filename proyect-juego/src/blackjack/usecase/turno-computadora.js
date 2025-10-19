@@ -3,7 +3,7 @@ import { pedirCarta } from './pedir-carta.js';
 /**
  * 
  * @param {Number}  puntosMinimos  : puntos que la computadora necesita para ganar
-  * @param {Array<HTMLElement>} puntosHTML : arreglo con los elementos HTML donde se muestran los puntos
+  * @param {HTMLElement} puntosHTML : arreglo con los elementos HTML donde se muestran los puntos
   * @param {Array<String>} deck 
  */
 export const turnoComputadora = ( puntosMinimos,puntosHTML,deck =[] ) => {
