@@ -1,12 +1,13 @@
-import { pedirCarta } from './pedir-carta.js';
+import { pedirCarta } from './';
 
 /**
  * 
  * @param {Number}  puntosMinimos  : puntos que la computadora necesita para ganar
   * @param {HTMLElement} puntosHTML : arreglo con los elementos HTML donde se muestran los puntos
+  * @param {HTMLElement} divCartasComputadora : elemento HTML para mostrar las cartas de la computadora
   * @param {Array<String>} deck 
  */
-export const turnoComputadora = ( puntosMinimos,puntosHTML,deck =[] ) => {
+export const turnoComputadora = ( puntosMinimos,puntosHTML,divCartasComputadora ,deck =[] ) => {
 
     if(!puntosMinimos) throw new Error('Puntos mínimos son necesarios');
     if(!puntosHTML)throw new Error('Puntos HTML son necesarios');
