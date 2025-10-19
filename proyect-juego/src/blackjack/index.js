@@ -1,5 +1,6 @@
 import { crearDeck } from './usecase/deck-function.js';
 import { pedirCarta } from './usecase/pedir-carta.js';
+import { valorCarta } from './usecase/valor-carta.js';
 /**
  * 2C = Two of Clubs
  * 2D = Two of Diamonds
@@ -26,10 +27,6 @@ const puntosHTML = document.querySelectorAll('small');
 
 
 deck= crearDeck(tipos, especiales);
-
-
-
-
 
 // turno de la computadora
 const turnoComputadora = ( puntosMinimos ) => {
