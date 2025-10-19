@@ -1,4 +1,5 @@
 import { crearDeck } from './usecase/deck-function.js';
+import { pedirCarta } from './usecase/pedir-carta.js';
 /**
  * 2C = Two of Clubs
  * 2D = Two of Diamonds
@@ -41,7 +42,7 @@ const valorCarta = ( carta ) => {
 const turnoComputadora = ( puntosMinimos ) => {
 
     do {
-        const carta = pedirCarta();
+        const carta = pedirCarta( deck );
 
         puntosComputadora = puntosComputadora + valorCarta( carta );
         puntosHTML[1].innerText = puntosComputadora;
@@ -76,7 +77,7 @@ const turnoComputadora = ( puntosMinimos ) => {
 // Eventos
 btnPedir.addEventListener('click', () => {
 
-    const carta = pedirCarta();
+    const carta = pedirCarta(deck);
     
     puntosJugador = puntosJugador + valorCarta( carta );
     puntosHTML[0].innerText = puntosJugador;
@@ -114,7 +115,7 @@ btnNuevo.addEventListener('click', () => {
 
     console.clear();
     deck = [];
-    deck = crearDeck();
+    deck = crearDeck(tipos,especiales);
 
     puntosJugador     = 0;
     puntosComputadora = 0;
