@@ -1,4 +1,4 @@
-import { crearDeck,pedirCarta,valorCarta,turnoComputadora } from "./usecase";
+import { crearDeck,pedirCarta,valorCarta,turnoComputadora,crearCartaHTML } from "./usecase";
 
 /**
  * 2C = Two of Clubs
@@ -39,7 +39,7 @@ btnPedir.addEventListener('click', () => {
     
    //las imagenes de las cartas
 
-   
+
     divCartasJugador.append( imgCarta );
 
     if ( puntosJugador > 21 ) {
