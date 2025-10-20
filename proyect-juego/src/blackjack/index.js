@@ -38,7 +38,7 @@ btnPedir.addEventListener('click', () => {
     puntosHTML[0].innerText = puntosJugador;
     
    //las imagenes de las cartas
-
+    const imgCarta= crearCartaHTML(carta);
 
     divCartasJugador.append( imgCarta );
 
